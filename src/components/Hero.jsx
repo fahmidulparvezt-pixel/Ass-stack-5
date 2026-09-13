@@ -9,8 +9,8 @@ export default function Hero() {
           </span>
         </h1>
         <p className="mt-5 text-slate-500 text-base md:text-lg leading-relaxed max-w-md">
-          Explore frontend, backend, database, and tooling options, compare them
-          side by side, and put together the stack that fits your next project.
+          you can explore frontend, backend, database, and tooling options, compare them
+          side by side, and put together the stack that fits your needs in your project.
         </p>
         <div className="mt-8 flex flex-wrap gap-4">
           <button className="px-6 py-3 rounded-lg font-semibold text-white bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 hover:opacity-90 transition-opacity">
