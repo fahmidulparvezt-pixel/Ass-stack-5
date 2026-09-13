@@ -24,7 +24,7 @@ export default function Hero() {
 
       <div className="flex justify-center md:justify-end">
         <img
-          src="src/assets/banner-stack.png"
+          src="/src/assets/ban.png"
           alt="Isometric illustration of a development stack"
           className="w-64 md:w-80 select-none"
           draggable="false"
