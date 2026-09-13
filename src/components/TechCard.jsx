@@ -49,7 +49,7 @@ export default function TechCard({ tech, isAdded, onAdd }) {
             ? "bg-slate-100 text-slate-400 cursor-not-allowed"
             : "bg-slate-900 text-white hover:bg-slate-800"
         }`}
-      >
+      >    // Button rotate between "Add to Stack" and "Added" states
         {isAdded ? "✓ Added to Stack" : "Add to Stack"}
       </button>
     </div>
