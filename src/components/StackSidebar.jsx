@@ -5,12 +5,12 @@ export default function StackSidebar({ stack, onRemove, onRemoveAll }) {
     <div className="bg-white border border-slate-200 rounded-xl p-5 sticky top-24">
       <h3 className="font-bold text-slate-900">Your Stack</h3>
       <p className="text-sm text-slate-400 mb-4">
-        {isEmpty ? "No technologies selected yet." : `${stack.length} Technology Selected`}
+        {isEmpty ? "No technologies selected." : `${stack.length} Technology Selected`}
       </p>
 
       {isEmpty ? (
         <div className="border border-dashed border-slate-200 rounded-lg py-10 flex items-center justify-center text-center">
-          <p className="text-sm text-slate-400 px-4">Your stack is empty.</p>
+          <p className="text-sm text-slate-400 px-4">The stack is empty.</p>
         </div>
       ) : (
         <div className="flex flex-col gap-3">
