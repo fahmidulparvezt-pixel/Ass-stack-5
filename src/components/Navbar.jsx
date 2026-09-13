@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const NAV_LINKS = ["Home", "Technologies", "Projects", "About", "Contact"];
+const NAV_LINKS = ["Home", "Future-techs", "Projects", "About", "Contact"];
 
 function Logo() {
   return (
