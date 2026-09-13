@@ -1,4 +1,6 @@
-const BADGE_COLORS = {
+   
+   // This component displays a single technology card with add-to-stack action
+  const BADGE_COLORS = {
   Popular: "bg-emerald-50 text-emerald-600",
   Versatile: "bg-emerald-50 text-emerald-600",
   Fast: "bg-orange-50 text-orange-600",
