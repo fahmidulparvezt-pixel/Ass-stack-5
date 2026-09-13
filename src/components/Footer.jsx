@@ -22,7 +22,7 @@ export default function Footer() {
             modern software.
           </p>
           <div className="flex gap-4 text-sm text-slate-500">
-            <a href="#" className="hover:text-slate-800">GitHub</a>
+            <a href="https://github.com/fahmidulparvezt-pixel" className="hover:text-slate-800">GitHub</a>
             <a href="#" className="hover:text-slate-800">Twitter</a>
             <a href="#" className="hover:text-slate-800">LinkedIn</a>
           </div>
