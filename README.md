@@ -6,14 +6,14 @@ Dev Stack Builder is an interactive web application that helps developers explor
 
 Each technology card displays useful information, including its name, category, difficulty level, rating, and description. Users can add technologies to their personal stack, remove them when needed, and explore different tools through a clean, responsive interface.
 
-## Technologies Used
+## 🛠️ Technologies 
 
-#React.js — Used for building the UI
-#Tailwind CSS — Used for styling
-#JavaScript (ES6+)
-#React-Toastify — Used for showing notifications and alerts
-#JSON — Used to store the technology data
-#Vite — Used as the build tool
+- **React.js** — Building reusable UI components
+- **Tailwind CSS** — Styling and responsive layouts
+- **JavaScript (ES6+)** — Application logic and interactivity
+- **React-Toastify** — Toast notifications and user feedback
+- **JSON** — Storing technology data
+- **Vite** — Development server and build tool
 
 ## 3 Main Features
 
