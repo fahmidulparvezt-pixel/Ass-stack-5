@@ -50,21 +50,41 @@ In short, props are passed into a component, while state stores data that can ch
 In this project, `useState` can manage the technology list, selected development stack, loading status, and mobile navigation menu state, provided these are the states implemented in the code.
 ### 4. What does the useEffect hook do, and why is it needed for loading JSON data?
 
-useEffect is mainly used for side effects after a component renders. For example, fetching data, setting a timer, etc.
+`useEffect` is a React Hook used to synchronize a component with external systems, such as APIs, browser events, and timers.
 
-In this project, it is needed to load the technology data from the JSON file when the component loads. We also need to show the loading state while the data is being loaded. That's why useEffect is used instead of doing this work directly while rendering.
+In this project, it can be used to load technology data when the component mounts and manage a loading state while the data is being prepared. If the JSON data is imported directly into the component, however, `useEffect` may not be necessary.
 
 ### 5. Why does each item in a `.map()` list need a unique key prop?
 
-React needs a unique key to know which item in a list is what. When something is added, removed or changed, React can understand the changes better with the help of the key.
+React uses the `key` prop to identify items in a rendered list. When items are added, removed, or reordered, stable keys help React determine which elements need updating.
 
-If we don't use a proper key, React may have problems while updating the list, and sometimes it can show unexpected UI behavior.
+For example:
+
+```jsx
+technologies.map((tech) => (
+  <TechCard key={tech.id} tech={tech} />
+))
+```
+
+A stable, unique ID is preferable to an array index when the list can change.
 
 ### 6. What is conditional rendering? Give an example from this project.
 
-Conditional rendering means showing different UI depending on a condition.
+Conditional rendering means displaying different UI elements depending on a condition.
 
-For example, when "Your Stack" is empty, the website shows "Your stack is empty." But when there are some technologies in the stack, it shows those technologies instead. 
+For example, the application can display an empty-state message when the user's stack contains no technologies, and display the selected technology cards when the stack has items.
+
+```jsx
+{stack.length === 0 ? (
+  <p>Your stack is empty.</p>
+) : (
+  stack.map((tech) => (
+    <TechCard key={tech.id} tech={tech} />
+  ))
+)}
+```
+
+This allows the interface to respond to the user's current selection.
 
 ### 7. How can data be passed from a parent component to a child, and how can a child communicate with the parent?
 
