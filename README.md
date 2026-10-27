@@ -27,28 +27,27 @@ Each technology card displays useful information, including its name, category, 
 
 5. **Responsive Design** — Adapts to mobile, tablet, and desktop screens, including a mobile navigation menu and responsive technology grid.
 
-## React Questions & Answers
+## 📚 React Questions & Answers
 
 ### 1. What is JSX, and why is it used in React?
 
-JSX is a syntax extension of JavaScript. It lets us write UI  inside JavaScript like html. The main reason for using it is, we can write the UI structure and logic in the same place, so it is easier to understand the component.
+JSX (JavaScript XML) is a syntax extension that allows developers to write HTML-like markup inside JavaScript. It makes React components easier to read and maintain by keeping UI structure close to the related logic.
 
-The browser doesn't understand JSX directly. So, it is converted into normal JavaScript during the build process.
+Browsers cannot execute JSX directly. Tools such as Vite transform JSX into JavaScript during the build process.
 
 ### 2. What is the difference between props and state?
 
-Props are data that is passed from a parent component to a child component. They are read-only, so the child cannot change the props directly.
+**Props** are read-only values passed from a parent component to a child component. They allow components to receive and display data from outside.
 
-State is the data that belongs to a component itself. It can be changed by using a state setter, and when the state changes, the component renders again.
+**State** is data managed by a component or a React hook. When state changes through a state setter, React schedules a re-render so the UI can reflect the updated data.
 
-In simple words, props comes from outside and state is like the component's own memory.
+In short, props are passed into a component, while state stores data that can change over time.
 
 ### 3. What does the useState hook do, and where is it used in this project?
 
-useState is a React hook which lets us create and update state inside a component. When the state is updated, React re-renders the component automatically.
+`useState` is a React Hook that lets a function component store and update state. When its setter is called, React schedules a re-render with the updated state.
 
-In this project, useState is used for the technology list , selected stack, loading state and also for opening and closing the mobile menu in the Navbar.
-
+In this project, `useState` can manage the technology list, selected development stack, loading status, and mobile navigation menu state, provided these are the states implemented in the code.
 ### 4. What does the useEffect hook do, and why is it needed for loading JSON data?
 
 useEffect is mainly used for side effects after a component renders. For example, fetching data, setting a timer, etc.
