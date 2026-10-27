@@ -88,12 +88,27 @@ This allows the interface to respond to the user's current selection.
 
 ### 7. How can data be passed from a parent component to a child, and how can a child communicate with the parent?
 
-A parent can send data to a child through props. For example:
+A parent component can pass data to a child component through props. This allows the child to receive the information it needs.
 
+For example:
+
+```jsx
 <TechCard tech={tech} />
+```
 
-Here, the tech data is passed to the TechCard component.
+Here, the `tech` object is passed to the `TechCard` component through the `tech` prop.
 
-If the child needs to communicate with the parent, the parent can pass a function as a prop. Then the child can call that function when something happens.
+A child component can communicate with its parent by calling a function that the parent passes down as a prop.
 
-In this project, onAdd={handleAddToStack} is passed to TechCard. When the user clicks "Add to Stack", the child calls the function and the parent's state gets updated.
+For example:
+
+```jsx
+<TechCard
+  tech={tech}
+  onAdd={handleAddToStack}
+/>
+```
+
+When the user clicks the Add button, `TechCard` can call `onAdd(tech)`. The parent component can then update its state using `handleAddToStack`.
+
+This pattern allows the parent to manage shared state while the child handles user interactions.
