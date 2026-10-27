@@ -1,8 +1,10 @@
-# Dev Stack Builder
+# 🧩 Dev Stack Builder
 
-## Project Overview
+### Build Your Own Custom Development Stack
 
-Dev Stack Builder is an interactive website where developers can browse different frontend, backend, database and development tools. From the technology cards, users can choose their desired technologies and make their own custom development stack. Every card contains the technology name, category, difficulty level, rating and a short description. So, it becomes easier for a user to choose the right tool for their project.
+Dev Stack Builder is an interactive web application that helps developers explore frontend, backend, database, and development tools and create their own custom technology stack.
+
+Each technology card displays useful information, including its name, category, difficulty level, rating, and description. Users can add technologies to their personal stack, remove them when needed, and explore different tools through a clean, responsive interface.
 
 ## Technologies Used
 
