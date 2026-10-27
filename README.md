@@ -15,15 +15,17 @@ Each technology card displays useful information, including its name, category, 
 - **JSON** — Storing technology data
 - **Vite** — Development server and build tool
 
-## 3 Main Features
+## ✨ Key Features
 
-1. Add/Remove to Stack — Any technology can be added to "Your Stack" with one click. It can also be removed with one click. The same technology cannot be added twice. After adding a technology, its button becomes disabled automatically.
+1. **Custom Stack Builder** — Add technologies to your personal development stack with a single click and remove them whenever needed.
 
-2. Real-Time Toast Notifications — Whenever the user adds or removes a technology, tries to add the same technology again, or clears the whole stack, a toast notification is shown. It gives the user quick feedback about what happened.
+2. **Duplicate Prevention** — Prevents the same technology from being added to the stack more than once. The Add button becomes disabled after a technology is selected.
 
-3. Fully Responsive Design — The website works on mobile, tablet and desktop devices. On mobile there is a hamburger menu, on tablet it uses a 2-column layout, and on desktop there is a 3-column grid.
+3. **Real-Time Toast Notifications** — Provides feedback when technologies are added or removed, when duplicate additions are attempted, and when the stack is cleared.
 
----
+4. **Technology Details** — Explore each technology's name, category, difficulty level, rating, and description.
+
+5. **Responsive Design** — Adapts to mobile, tablet, and desktop screens, including a mobile navigation menu and responsive technology grid.
 
 ## React Questions & Answers
 
