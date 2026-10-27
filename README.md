@@ -6,6 +6,11 @@ Dev Stack Builder is an interactive web application that helps developers explor
 
 Each technology card displays useful information, including its name, category, difficulty level, rating, and description. Users can add technologies to their personal stack, remove them when needed, and explore different tools through a clean, responsive interface.
 
+## 🔗 Live Demo & Repository
+
+- **Live Demo:** [Dev Stack Builder](https://snazzy-quokka-0fc143.netlify.app/)
+- **Source Code:** [GitHub Repository](https://github.com/fahmidulparvezt-pixel/Ass-stack-5)
+
 ## 🛠️ Technologies 
 
 - **React.js** — Building reusable UI components
